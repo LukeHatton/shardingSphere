@@ -1,0 +1,27 @@
+server:
+  address: 0.0.0.0
+  port: 8080
+logging:
+  level:
+    root: info
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/sharding_db1
+    username: root
+    password: password
+#  shardingsphere:
+#    datasource:
+#      names: sharding_db1
+#    sharding_db1:
+#      driver-class-name: com.mysql.cj.jdbc.Driver
+#      url: jdbc:mysql://localhost:3306/sharding_db1
+#      username: root
+#      password: password

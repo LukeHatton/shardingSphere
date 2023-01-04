@@ -32,11 +32,11 @@ import javax.persistence.Table;
 public class UserOrder {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.SEQUENCE)
-  private String id;
+  // @GeneratedValue(strategy = GenerationType.SEQUENCE)
+  private Long id;
 
   @Column(name = "user_id")
-  private String userId;
+  private Long userId;
 
   @Column(name = "name")
   private String name;

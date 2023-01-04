@@ -3,7 +3,6 @@ package com.example.shardingsphere.bean;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
@@ -33,8 +32,8 @@ import javax.persistence.Table;
 public class User {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.SEQUENCE)
-  private String id;
+  // @GeneratedValue(strategy = GenerationType.SEQUENCE)
+  private Long id;
 
   @Column(name = "name")
   private String name;
